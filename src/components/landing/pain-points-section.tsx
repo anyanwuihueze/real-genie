@@ -54,7 +54,7 @@ export function PainPointsSection() {
             <Card
               key={index}
               className="text-center bg-card shadow-lg hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.1}s` }} // Basic staggered animation
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="items-center">
                 {painPoint.icon}

@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Star, TrendingUp, Users, ShieldCheck } from 'lucide-react';
 
 export function SocialProofSection() {
@@ -52,4 +52,3 @@ export function SocialProofSection() {
     </section>
   );
 }
-    

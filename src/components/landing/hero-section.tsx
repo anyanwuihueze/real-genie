@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
@@ -44,10 +45,9 @@ export function HeroSection() {
         setIsDeleting(false);
         setQuestionIndex((prevIndex) => (prevIndex + 1) % placeholderQuestionsList.length);
         timeoutId = setTimeout(() => {
-          // Pause before starting new question
         }, pauseBeforeNewQuestion);
       }
-    } else { // Typing
+    } else { 
       if (charIndex < placeholderQuestionsList[questionIndex].length) {
         timeoutId = setTimeout(() => {
           setCurrentPlaceholder(placeholderQuestionsList[questionIndex].substring(0, charIndex + 1));
@@ -95,11 +95,7 @@ export function HeroSection() {
           muted
           playsInline
           className="w-full h-full object-cover mix-blend-overlay"
-          src="/videos/Extreme_closeup_of_202506211607_orzt4.mp4"
-          onError={(e) => {
-            console.error('Primary video failed to load, attempting fallback.', e);
-            (e.target as HTMLVideoElement).src = "https://assets.mixkit.co/videos/preview/mixkit-womans-hands-typing-on-a-laptop-4299-large.mp4";
-          }}
+          src="https://assets.mixkit.co/videos/preview/mixkit-womans-hands-typing-on-a-laptop-4299-large.mp4"
         />
       </div>
 

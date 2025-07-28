@@ -72,25 +72,6 @@ export function AppPreviewSection({ id }: AppPreviewSectionProps) {
             </CardContent>
           </Card>
         </div>
-
-        {/* The golden button previously here has been moved to the HeroSection */}
-        {/*
-        <div className="mt-12 md:mt-16 text-center">
-          <Button
-            size="lg"
-            asChild
-            className="bg-amber-500 hover:bg-amber-600 text-black font-semibold shadow-xl shadow-amber-500/50 hover:shadow-amber-400/60 transform hover:scale-105 transition-all duration-200 animate-wiggle px-10 py-7 text-xl"
-          >
-            <Link href="/chat">
-              <Sparkles className="mr-3 h-6 w-6" />
-              Chat with Japa Genie Now
-            </Link>
-          </Button>
-          <p className="text-sm text-muted-foreground mt-3">
-            Experience AI-powered visa guidance firsthand.
-          </p>
-        </div>
-        */}
       </div>
     </section>
   );

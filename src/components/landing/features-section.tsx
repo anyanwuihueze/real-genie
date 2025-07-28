@@ -54,7 +54,6 @@ const features = [
 export function FeaturesSection() {
   return (
     <section className="py-16 bg-surface-alt relative overflow-hidden">
-      {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-5"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
