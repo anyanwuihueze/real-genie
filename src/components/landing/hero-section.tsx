@@ -45,9 +45,10 @@ export function HeroSection() {
         setIsDeleting(false);
         setQuestionIndex((prevIndex) => (prevIndex + 1) % placeholderQuestionsList.length);
         timeoutId = setTimeout(() => {
+          // Pause before starting new question
         }, pauseBeforeNewQuestion);
       }
-    } else { 
+    } else { // Typing
       if (charIndex < placeholderQuestionsList[questionIndex].length) {
         timeoutId = setTimeout(() => {
           setCurrentPlaceholder(placeholderQuestionsList[questionIndex].substring(0, charIndex + 1));
