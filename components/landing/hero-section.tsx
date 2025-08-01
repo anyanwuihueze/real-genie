@@ -44,9 +44,10 @@ export function HeroSection() {
         setIsDeleting(false);
         setQuestionIndex((prevIndex) => (prevIndex + 1) % placeholderQuestionsList.length);
         timeoutId = setTimeout(() => {
+          // Pause before starting new question
         }, pauseBeforeNewQuestion);
       }
-    } else { 
+    } else { // Typing
       if (charIndex < placeholderQuestionsList[questionIndex].length) {
         timeoutId = setTimeout(() => {
           setCurrentPlaceholder(placeholderQuestionsList[questionIndex].substring(0, charIndex + 1));
@@ -86,7 +87,18 @@ export function HeroSection() {
 
   return (
     <section className="min-h-screen flex items-center pt-20 md:pt-24 bg-gradient-to-br from-[#0f172a]/95 via-[#4338ca]/80 to-[#f59e0b]/60 relative overflow-hidden">
-      
+      {/* Video Background */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover mix-blend-overlay"
+          src="https://assets.mixkit.co/videos/preview/mixkit-womans-hands-typing-on-a-laptop-4299-large.mp4"
+        />
+      </div>
+
       {/* Animated Gradient Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent z-[1] animate-shine"></div>
       

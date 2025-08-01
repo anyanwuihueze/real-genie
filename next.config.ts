@@ -1,3 +1,4 @@
+
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
@@ -21,8 +22,7 @@ const nextConfig: NextConfig = {
     allowedDevOrigins: [
       "9003-idx-studio-1746566940513.cluster-l6vkdperq5ebaqo3qy4ksvoqom.cloudworkstations.dev"
     ]
-  },
-  output: 'export',
+  }
 };
 
 export default nextConfig;
